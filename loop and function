@@ -1,0 +1,31 @@
+let aynfts = [];
+
+function mintNFT(work, age, place) {
+  const nft = { work, age, place };
+  aynfts.push(nft);
+  console.log("Created NFT:", nft.work); 
+}
+
+function listNFTs() {
+  for (let i = 0; i < aynfts.length; i++) {
+    console.log("\nNFT ID:", i + 1);
+    console.log("work:", aynfts[i].work);
+    console.log("Age:", aynfts[i].age);
+    console.log("place:", aynfts[i].place);
+  }
+}
+
+function getTotalSupply() {
+  console.log("\nTotal NFTs:", aynfts.length);
+}
+
+mintNFT("Hello", "bro", "BEAUTIFUL INDIA");
+mintNFT("HIII", "GOODBYE", "764768530");
+mintNFT("shane", "Walking dead", "6576587");
+mintNFT("Paul walker", "fast and furious", "7675765763Q33");
+
+
+listNFTs();
+
+
+getTotalSupply();
